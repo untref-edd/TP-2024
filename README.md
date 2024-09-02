@@ -1,55 +1,56 @@
-### Trabajo Práctico Grupal de Estructuras de Datos
+# Trabajo Práctico Grupal de Estructuras de Datos
 
-**Objetivo:**
-El objetivo de este trabajo práctico es aplicar los conceptos aprendidos en clase sobre grafos, recuperación de información de la web y persistencia de datos. Los estudiantes trabajarán en grupos de 4 o 5 integrantes para implementar un crawler, construir un grafo de la web y realizar operaciones avanzadas sobre este grafo, incluyendo el cálculo del PageRank y la identificación de componentes fuertemente conexas.
+## Objetivo
 
-**Enunciado:**
+El objetivo de este trabajo práctico es aplicar los conceptos aprendidos en clase sobre grafos, recuperación de información de la web y persistencia de datos. Los estudiantes trabajarán en grupos de 4 o 5 integrantes para implementar un _crawler_, construir un grafo de la web y realizar operaciones avanzadas sobre este grafo, incluyendo el cálculo del _PageRank_ y la identificación de componentes fuertemente conexas.
 
-#### Parte 1: Web Crawling
+## Enunciado
 
-1. **Implementación del Crawler**
-    - Desarrolla un crawler que navegue por el sitio web `untref.edu.ar`, comenzando desde una URL dada.
-    - El crawler debe recolectar información sobre los enlaces internos del dominio `untref.edu.ar`.
-    - Almacena los datos recolectados en archivos CSV, incluyendo la URL de origen, la URL de destino y cualquier información adicional relevante (como el texto del enlace).
+### Parte 1: Web Crawling
 
-#### Parte 2: Construcción del Grafo
+1. **Implementación del _crawler_**
+    - Desarrollar un _crawler_ que navegue por el sitio web `untref.edu.ar`, comenzando desde una URL dada.
+    - El _crawler_ debe recolectar información sobre los enlaces internos del dominio `untref.edu.ar`.
+    - Almacenar los datos recolectados en archivos CSV, incluyendo la URL de origen, la URL de destino y cualquier información adicional relevante (como el texto del enlace).
+
+### Parte 2: Construcción del Grafo
 
 1. **Definición y Construcción del Grafo**
-    - Define una clase `GrafoWeb` para representar un grafo dirigido de las páginas de `untref.edu.ar`.
+    - Definir una clase `GrafoWeb` para representar un grafo dirigido de las páginas de `untref.edu.ar`.
     - Cada nodo del grafo representará una página web del dominio, y cada arista representará un enlace entre páginas.
-    - Implementa métodos para agregar nodos y aristas al grafo utilizando los datos recolectados por el crawler.
-    - Visualiza el grafo de manera gráfica utilizando bibliotecas como `networkx` y `matplotlib`.
+    - Implementar métodos para agregar nodos y aristas al grafo utilizando los datos recolectados por el _crawler_.
+    - Visualizar el grafo de manera gráfica utilizando bibliotecas como `networkx` y `matplotlib` o `pygraphviz`.
 
-#### Parte 3: Cálculo del PageRank
+### Parte 3: Cálculo del _PageRank_
 
-1. **Implementación del Algoritmo de PageRank**
-    - Implementa el algoritmo de PageRank para calcular la importancia de cada página dentro del dominio `untref.edu.ar`.
-    - Asegúrate de manejar adecuadamente los enlaces salientes y entrantes, así como las páginas sin enlaces salientes (dangling nodes).
+1. **Implementación del Algoritmo de _PageRank_**
+    - Implementar el algoritmo de _PageRank_ para calcular la importancia de cada página dentro del dominio `untref.edu.ar`.
+    - Asegurarse de manejar adecuadamente los enlaces salientes y entrantes, así como las páginas sin enlaces salientes (_dangling nodes_).
 
-2. **Resultados del PageRank**
-    - Almacena los resultados del PageRank en un archivo CSV, incluyendo la URL de la página y su valor de PageRank.
-    - Visualiza los resultados en forma de gráfico, mostrando las páginas con los valores de PageRank más altos.
+2. **Resultados del _PageRank_**
+    - Almacenar los resultados del _PageRank_ en un archivo CSV, incluyendo la URL de la página y su valor de _PageRank_.
+    - Visualizar los resultados en forma de gráfico, mostrando las páginas con los valores de _PageRank_ más altos.
 
-#### Parte 4: Componentes Fuertemente Conexas
+### Parte 4: Componentes Fuertemente Conexas
 
 1. **Identificación de Componentes Fuertemente Conexas**
-    - Implementa un algoritmo para encontrar las componentes fuertemente conexas (SCC) del grafo.
-    - Escribe un programa que utilice este algoritmo para identificar y listar todas las SCC del grafo de `untref.edu.ar`.
+    - Implementar un algoritmo para encontrar las componentes fuertemente conexas (SCC) del grafo.
+    - Escribir un programa que utilice este algoritmo para identificar y listar todas las SCC del grafo de `untref.edu.ar`.
 
 2. **Visualización de las SCC**
-    - Visualiza las componentes fuertemente conexas en el grafo, utilizando colores o etiquetas distintas para cada SCC.
-    - Almacena los resultados en un archivo CSV, incluyendo las URLs de las páginas en cada SCC.
+    - Visualizar las componentes fuertemente conexas en el grafo, utilizando colores o etiquetas distintas para cada SCC.
+    - Almacenar los resultados en un archivo CSV, incluyendo las URLs de las páginas en cada SCC.
 
-#### Parte 5: Persistencia de Datos
+### Parte 5: Persistencia de Datos
 
 1. **Guardado y Carga del Grafo**
-    - Guarda el grafo construido y los resultados de las operaciones en archivos CSV.
-    - Implementa funciones para leer y escribir datos en estos archivos, asegurando que se manejen posibles excepciones.
+    - Guardar el grafo construido y los resultados de las operaciones en archivos CSV.
+    - Implementar funciones para leer y escribir datos en estos archivos, asegurando que se manejen posibles excepciones.
 
-#### Entregables
+## Entregables
 
 1. **Código Fuente:**
-    - Todo el código fuente de los programas, organizado en carpetas según la funcionalidad (crawler, grafo, PageRank, SCC, persistencia de datos).
+    - Todo el código fuente de los programas, organizado en carpetas según la funcionalidad (_crawler_, grafo, _PageRank_, SCC, persistencia de datos).
 
 2. **Documentación:**
     - Documentación del código y las decisiones de diseño.
@@ -74,8 +75,8 @@ El objetivo de este trabajo práctico es aplicar los conceptos aprendidos en cla
 ### Instrucciones Adicionales para el Trabajo en Grupo
 
 - **Formación de Grupos:** Cada grupo debe estar conformado por 4 o 5 estudiantes.
-- **Distribución de Tareas:** Es importante que cada integrante del grupo tenga una responsabilidad clara. Se recomienda asignar tareas específicas (por ejemplo, uno se encarga del crawler, otro del grafo, otro del cálculo del PageRank, etc.) para asegurar una distribución equitativa del trabajo.
-- **Coordinación y Comunicación:** Utilicen herramientas de gestión de proyectos (como Trello o Asana) y comunicación (como Slack o WhatsApp) para coordinar el trabajo y mantener una comunicación fluida.
-- **Control de Versiones:** Utilicen un sistema de control de versiones (como Git) para colaborar en el desarrollo del código y mantener un historial de cambios.
+- **Distribución de Tareas:** Es importante que cada integrante del grupo tenga una responsabilidad clara. Se recomienda asignar tareas específicas (por ejemplo, uno se encarga del _crawler_, otro del grafo, otro del cálculo del _PageRank_, etc.) para asegurar una distribución equitativa del trabajo.
+- **Coordinación y Comunicación:** Utilizar herramientas de gestión de proyectos (como Trello o Asana) y comunicación (Slack o WhatsApp) para coordinar el trabajo y mantener una comunicación fluida.
+- **Control de Versiones:** Utilizar Git para colaborar en el desarrollo del código y mantener un historial de cambios
 
-Espero que este enunciado sea útil para estructurar el trabajo práctico de tu curso de Estructuras de Datos. ¡Buena suerte!
+**🚨 TODOS LOS INTEGRANTES DEL EQUIPO DEBERAN HACER COMMITS AL REPOSITORIO PARA DEMOSTRAR SU PARTICIPACIÓN EN EL DESARROLLO 🚨**.

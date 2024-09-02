@@ -63,7 +63,7 @@ El objetivo de este trabajo práctico es aplicar los conceptos aprendidos en cla
     - Una presentación oral explicando las soluciones implementadas y respondiendo preguntas sobre el código y los algoritmos utilizados. Las fechas de las presentaciones serán anunciadas posteriormente.
 
 **Fecha Límite de Entrega:**
-- [Inserte fecha]
+- Semana del 28 de octubre. Durante esa semana los grupos realizarán la presentación oral de su trabajo en clase.
 
 **Evaluación:**
 - La correcta implementación de los algoritmos y estructuras de datos.
